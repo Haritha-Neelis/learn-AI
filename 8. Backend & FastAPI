@@ -1,0 +1,20 @@
+8. Backend & FastAPI
+Concurrency, connection pools, APIs
+...................................
+
+8.1 Inference architecture
+1. How would you design an inference microservice?
+2. What are the roles and responsibilities involved in developing an inference service?
+3. What are the different LLM inference and optimization strategies?
+4. How would you benchmark an inference solution against managed AWS/Azure services?
+5. What metrics would you use to compare inference solutions?
+6. How would you evaluate self-hosted inference against managed inference services?
+8.2 Model performance and evaluation
+7. What metrics would you use to measure inference latency, throughput, quality, and resource utilization?
+8. How would you measure the quality and reliability of a GenAI application in production?
+9. How would you identify and eliminate performance bottlenecks in inference?
+8.3 Observability and traceability
+10. What are observability and traceability in GenAI systems?
+11. How do you monitor an AI application in production?
+12. How do you handle latency, cost, token usage, and failures?
+13. What information should be logged or traced across a RAG pipeline and agent workflow?

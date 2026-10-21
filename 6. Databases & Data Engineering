@@ -1,0 +1,21 @@
+6. Databases & Data Engineering
+SQL, ingestion, lakes, CSV, APIs
+................................
+
+6.1 Database fundamentals and selection
+1. Object storage vs. SQL databases — when should you use each?
+2. How do you create a database connection string?
+3. How do you handle database connections for multiple users?
+4. What is SQLAlchemy's connection pool?
+5. How would you design ingestion and retrieval for relational databases?
+6.2 Data lakes and enterprise sources
+6. What is a Data Lake? Explain its overview and architecture.
+7. How would you design an ingestion and retrieval system for institutional/domain data?
+8. How would you design an ingestion and retrieval system for relational databases?
+9. How would you design an ingestion and retrieval system for external APIs and webhooks?
+10. How would you design a solution for processing and querying CSV data?
+11. How would you design a GenAI system to support structured and unstructured enterprise data?
+6.3 Data-source selection and routing
+12. How would you select the correct data source for a user query?
+13. How would you implement query routing between relational databases, vector databases, and external APIs?
+14. When should an external API or webhook be invoked as part of the retrieval flow?

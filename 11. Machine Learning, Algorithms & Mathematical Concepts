@@ -1,0 +1,15 @@
+11. Machine Learning & Math
+Logistic regression, SVM, time series
+......................................
+
+11.1 Classification algorithms
+1. Explain Logistic Regression and the sigmoid function.
+2. Explain Support Vector Machines (SVM).
+3. What are the different SVM kernel functions?
+11.2 Time-series concepts
+4. Explain time-series concepts.
+5. What is first-order differentiation, and how is it used in time-series analysis?
+11.3 Graphs and relationship resolution
+6. How is a graph constructed, and how can it be used to resolve relationships?
+
+Prepare to explain nodes, edges, graph traversal, relationship extraction, and how graph-based retrieval can complement RAG.

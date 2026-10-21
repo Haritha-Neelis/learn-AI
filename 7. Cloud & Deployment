@@ -1,0 +1,16 @@
+7. Cloud & Deployment
+AWS, Azure, Bedrock, CI/CD
+..........................
+
+7.1 AWS and managed AI services
+1. What is AgentCore in AWS?
+2. Explain working with agents and Amazon Bedrock.
+3. How would you benchmark an inference solution against managed AWS/Azure services?
+4. How would you compare a self-hosted model with managed cloud inference services?
+7.2 Deployment and source-code management
+5. What are the different source-code management and deployment approaches?
+6. What challenges did you face while moving a GenAI/ML proof of concept to production?
+7. How would you implement versioning and rollback for prompts, models, agents, and workflows?
+7.3 Enterprise cloud data architecture
+8. What is a Data Lake? Explain its architecture.
+9. How would you design enterprise data ingestion and processing for a cloud-based GenAI platform?

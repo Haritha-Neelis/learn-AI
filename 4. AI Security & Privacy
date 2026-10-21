@@ -1,0 +1,19 @@
+4. AI Security & Privacy
+Prompt injection, access control, redaction
+...........................................
+
+4.1 Security fundamentals
+1. What is prompt injection?
+2. How can you protect an enterprise RAG system?
+3. How do you prevent data leakage?
+4. What are guardrails?
+5. How would you implement authentication and authorization for an AI application?
+4.2 Confidential enterprise data
+6. How do you handle confidential documents and data redaction?
+7. How did you handle security and data privacy when moving an AI application into production?
+8. How would you prevent sensitive information from being exposed?
+9. How would you design a system that supports multiple tenants with strict data isolation?
+4.3 Security in production
+10. How would you enforce access control so retrieval returns only documents a user is authorized to see?
+11. How would you protect sensitive data across ingestion, embeddings, retrieval, logs, and LLM requests?
+Questions 10–11 are additional practice prompts to deepen the original security topics.

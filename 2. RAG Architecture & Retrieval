@@ -1,0 +1,37 @@
+2. RAG Architecture & Retrieval
+Pipelines, chunking, search, reranking
+.......................................
+
+2.1 End-to-end RAG
+1. Explain an end-to-end RAG pipeline:
+
+Document → Chunking → Embedding → Vector DB → Retrieval → Context → LLM → Response
+2. Explain chunk size and overlap.
+3. What is Top-K retrieval?
+4. What is metadata filtering?
+5. What is hybrid search?
+6. What is reranking?
+7. How does RAG help reduce hallucinations?
+8. What are the different types of memory management in RAG?
+9. What are the best practices for memory management in RAG?
+10. How do you handle a long conversation history?
+11. If you use an LLM to summarize long conversation history, wouldn't the summarization itself increase the LLM cost?
+12. If an AI agent gives a wrong answer, how would you identify and correct it?
+2.2 Retrieval, ranking and search
+13. What are dense and sparse retrieval algorithms?
+14. How does semantic search work?
+15. How do you extract text from scanned PDFs, images, and other document formats using multimodal models?
+16. How is the BM25 score calculated?
+17. BM25 returns n chunks and semantic search returns n chunks. How would you combine these results?
+18. What is Reciprocal Rank Fusion (RRF)?
+2.3 Enterprise ingestion and document processing
+19. What are the enterprise data ingestion techniques?
+20. What are the different techniques for chunking legal documents?
+21. How would you design data ingestion and processing for an enterprise GenAI platform?
+22. How would you design a system for institutional/domain data, including ingestion and retrieval?
+23. How would you design a solution for processing and querying CSV data?
+24. How would you design a GenAI system to support both structured and unstructured enterprise data?
+2.4 Retrieval quality and relevance
+25. If multiple documents are available, how does the system decide which information is relevant?
+26. What role do embeddings, similarity scores, metadata filters, and reranking play in document selection?
+27. How would you improve retrieval if the LLM is getting irrelevant context?

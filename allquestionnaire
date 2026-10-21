@@ -1,0 +1,341 @@
+GenAI Interview Question Bank
+1. GenAI & LLM Fundamentals
+LLMs, LLaMA, temperature, tokens
+
+2. RAG & Retrieval
+Pipelines, chunking, search, reranking
+
+3. Embeddings & Vector DBs
+Vectors, similarity, vector stores
+
+4. AI Security & Privacy
+Prompt injection, access control, redaction
+
+5. Agents, MCP & A2A
+Tool use, agent memory, protocols
+
+6. Databases & Data Engineering
+SQL, ingestion, lakes, CSV, APIs
+
+7. Cloud & Deployment
+AWS, Azure, Bedrock, CI/CD
+
+8. Backend & FastAPI
+Concurrency, connection pools, APIs
+
+9. LLMOps & Performance
+Cost, latency, observability, inference
+
+10. System Design & Scalability
+Multi-tenancy, routing, resilience
+
+11. Machine Learning & Math
+Logistic regression, SVM, time series
+
+12. Coding & Python Problems
+Maximum subarray sum
+
+
+
+
+
+1. GenAI & LLM Fundamentals
+s
+1. Explain the LLaMA architecture — its key components and how the model works.
+2. What is temperature tuning, and how does it affect LLM responses?
+3. GPT-4o-mini: What are its input and output token limits?
+4. What is the difference between tokenization and embeddings?
+   - Tokenization converts text into tokens an LLM can process.
+   - Embeddings convert text or data into numerical vectors that represent semantic information.
+5. An LLM can generate different answers for the same prompt at different times. How would you make the output deterministic and consistent?
+1.2 LLM inference and optimization
+6. What is quantization? Explain its concepts, use cases, and trade-offs.
+7. What are the different LLM inference and optimization strategies?
+
+2. RAG Architecture & Retrieval
+2.1 End-to-end RAG
+1. Explain an end-to-end RAG pipeline:
+
+Document → Chunking → Embedding → Vector DB → Retrieval → Context → LLM → Response
+2. Explain chunk size and overlap.
+3. What is Top-K retrieval?
+4. What is metadata filtering?
+5. What is hybrid search?
+6. What is reranking?
+7. How does RAG help reduce hallucinations?
+8. What are the different types of memory management in RAG?
+9. What are the best practices for memory management in RAG?
+10. How do you handle a long conversation history?
+11. If you use an LLM to summarize long conversation history, wouldn't the summarization itself increase the LLM cost?
+12. If an AI agent gives a wrong answer, how would you identify and correct it?
+2.2 Retrieval, ranking and search
+13. What are dense and sparse retrieval algorithms?
+14. How does semantic search work?
+15. How do you extract text from scanned PDFs, images, and other document formats using multimodal models?
+16. How is the BM25 score calculated?
+17. BM25 returns n chunks and semantic search returns n chunks. How would you combine these results?
+18. What is Reciprocal Rank Fusion (RRF)?
+2.3 Enterprise ingestion and document processing
+19. What are the enterprise data ingestion techniques?
+20. What are the different techniques for chunking legal documents?
+21. How would you design data ingestion and processing for an enterprise GenAI platform?
+22. How would you design a system for institutional/domain data, including ingestion and retrieval?
+23. How would you design a solution for processing and querying CSV data?
+24. How would you design a GenAI system to support both structured and unstructured enterprise data?
+2.4 Retrieval quality and relevance
+25. If multiple documents are available, how does the system decide which information is relevant?
+26. What role do embeddings, similarity scores, metadata filters, and reranking play in document selection?
+27. How would you improve retrieval if the LLM is getting irrelevant context?
+
+3. Embeddings, Vector Mathematics & Vector Databases
+3.1 Embeddings and vector fundamentals
+1. What is an embedding, and why do we need it?
+2. How does text get converted into a vector?
+3. How do you choose an embedding model?
+4. What do the direction and magnitude of a vector represent?
+5. How does similarity search work?
+3.2 Vector database selection
+6. How do you decide which vector database to use?
+7. What is the difference between FAISS, Pinecone, Qdrant, Chroma, Weaviate, and pgvector?
+8. Which database or vector store would you use during local development, and what would you use in production? Why?
+Be prepared to explain these trade-offs:
+- Scalability
+- Availability
+- Performance
+- Cost
+- Security
+- Backup and recovery
+- Maintenance
+3.3 Search and database interaction
+9. How would you combine vector similarity search with metadata filtering?
+10. How do you select the appropriate vector store for an enterprise RAG application?
+Note: Questions 9–10 are additional study prompts derived from your supplied topics, not separate questions from your original list. The original vector database and retrieval questions are already included above.
+
+4. AI Security, Privacy & Guardrails
+4.1 Security fundamentals
+1. What is prompt injection?
+2. How can you protect an enterprise RAG system?
+3. How do you prevent data leakage?
+4. What are guardrails?
+5. How would you implement authentication and authorization for an AI application?
+4.2 Confidential enterprise data
+6. How do you handle confidential documents and data redaction?
+7. How did you handle security and data privacy when moving an AI application into production?
+8. How would you prevent sensitive information from being exposed?
+9. How would you design a system that supports multiple tenants with strict data isolation?
+4.3 Security in production
+10. How would you enforce access control so retrieval returns only documents a user is authorized to see?
+11. How would you protect sensitive data across ingestion, embeddings, retrieval, logs, and LLM requests?
+Questions 10–11 are additional practice prompts to deepen the original security topics.
+
+5. AI Agents, Memory, MCP & A2A Protocols
+5.1 Agent fundamentals and implementation
+1. What is MCP? Explain its architecture and detailed implementation flow.
+2. What is the A2A protocol?
+3. What is AgentCore in AWS?
+4. What is the process of working with agents and Amazon Bedrock?
+5. If an AI agent gives a wrong answer, how would you identify and correct it?
+5.2 Agent memory and context
+6. What are the different types of memory management in RAG?
+7. What are the best practices for memory management in RAG?
+8. How do you handle a long conversation history?
+9. If you use an LLM to summarize long conversation history, wouldn't the summarization itself increase the LLM cost?
+5.3 Agent reliability and tool selection
+10. How would you decide when an agent should call an external API or webhook as part of the retrieval flow?
+11. How would you control agent tool usage, prevent unnecessary calls, and handle tool failures?
+Questions 10–11 are additional practice prompts based on your supplied agent and retrieval scenarios.
+
+6. Databases, Data Engineering & Data Lakes
+6.1 Database fundamentals and selection
+1. Object storage vs. SQL databases — when should you use each?
+2. How do you create a database connection string?
+3. How do you handle database connections for multiple users?
+4. What is SQLAlchemy's connection pool?
+5. How would you design ingestion and retrieval for relational databases?
+6.2 Data lakes and enterprise sources
+6. What is a Data Lake? Explain its overview and architecture.
+7. How would you design an ingestion and retrieval system for institutional/domain data?
+8. How would you design an ingestion and retrieval system for relational databases?
+9. How would you design an ingestion and retrieval system for external APIs and webhooks?
+10. How would you design a solution for processing and querying CSV data?
+11. How would you design a GenAI system to support structured and unstructured enterprise data?
+6.3 Data-source selection and routing
+12. How would you select the correct data source for a user query?
+13. How would you implement query routing between relational databases, vector databases, and external APIs?
+14. When should an external API or webhook be invoked as part of the retrieval flow?
+
+7. Cloud Platforms, AWS, Azure & Deployment
+7.1 AWS and managed AI services
+1. What is AgentCore in AWS?
+2. Explain working with agents and Amazon Bedrock.
+3. How would you benchmark an inference solution against managed AWS/Azure services?
+4. How would you compare a self-hosted model with managed cloud inference services?
+7.2 Deployment and source-code management
+5. What are the different source-code management and deployment approaches?
+6. What challenges did you face while moving a GenAI/ML proof of concept to production?
+7. How would you implement versioning and rollback for prompts, models, agents, and workflows?
+7.3 Enterprise cloud data architecture
+8. What is a Data Lake? Explain its architecture.
+9. How would you design enterprise data ingestion and processing for a cloud-based GenAI platform?
+
+8. Inference Services, Model Serving & LLMOps
+8.1 Inference architecture
+1. How would you design an inference microservice?
+2. What are the roles and responsibilities involved in developing an inference service?
+3. What are the different LLM inference and optimization strategies?
+4. How would you benchmark an inference solution against managed AWS/Azure services?
+5. What metrics would you use to compare inference solutions?
+6. How would you evaluate self-hosted inference against managed inference services?
+8.2 Model performance and evaluation
+7. What metrics would you use to measure inference latency, throughput, quality, and resource utilization?
+8. How would you measure the quality and reliability of a GenAI application in production?
+9. How would you identify and eliminate performance bottlenecks in inference?
+8.3 Observability and traceability
+10. What are observability and traceability in GenAI systems?
+11. How do you monitor an AI application in production?
+12. How do you handle latency, cost, token usage, and failures?
+13. What information should be logged or traced across a RAG pipeline and agent workflow?
+
+9. Python Backend, FastAPI & Asynchronous Programming
+9.1 FastAPI
+1. What are the benefits of FastAPI?
+2. How do you create a database connection string?
+3. How do you handle database connections for multiple users?
+4. What is SQLAlchemy's connection pool?
+9.2 Asynchronous programming
+5. When would you use asynchronous programming, and when would you not use it?
+
+Prepare to explain:
+- Synchronous vs. asynchronous execution
+- I/O-bound vs. CPU-bound workloads
+- async and await
+- Concurrent requests to an LLM provider
+- Async database and API calls
+- Connection pool limits and timeouts
+
+10. GenAI System Design & Scalability
+This is a major category for senior-level GenAI interviews. Your ten original system design questions are preserved below.
+10.1 High-concurrency architecture
+1. How would you design a GenAI application serving 10,000+ concurrent users?
+2. How would you identify and eliminate bottlenecks when scaling a GenAI application from hundreds to millions of requests?
+3. How would you design a GenAI system to support real-time and batch workloads simultaneously?
+10.2 Multi-model architecture and routing
+4. How would you design a GenAI platform supporting multiple LLM providers and models?
+5. How would you design model routing based on latency, quality, and cost?
+6. How would you design a fallback architecture when the primary LLM provider becomes unavailable?
+10.3 Enterprise platform design
+7. How would you design data ingestion and processing for an enterprise GenAI platform?
+8. How would you design a system that supports multiple tenants with strict data isolation?
+9. How would you design versioning and rollback for prompts, models, agents, and workflows?
+10. How would you design a GenAI system to support both structured and unstructured enterprise data?
+10.4 Architecture trade-offs
+When answering these questions, be ready to discuss:
+- Load balancing and horizontal scaling
+- API gateways, queues, and rate limiting
+- Caching and request deduplication
+- Model routing and provider fallback
+- Streaming responses and batch processing
+- Tenant isolation and access control
+- Retries, timeouts, circuit breakers, and graceful degradation
+- Cost, latency, throughput, and reliability
+- Deployment strategies, monitoring, and rollback
+
+11. Machine Learning, Algorithms & Mathematical Concepts
+11.1 Classification algorithms
+1. Explain Logistic Regression and the sigmoid function.
+2. Explain Support Vector Machines (SVM).
+3. What are the different SVM kernel functions?
+11.2 Time-series concepts
+4. Explain time-series concepts.
+5. What is first-order differentiation, and how is it used in time-series analysis?
+11.3 Graphs and relationship resolution
+6. How is a graph constructed, and how can it be used to resolve relationships?
+
+Prepare to explain nodes, edges, graph traversal, relationship extraction, and how graph-based retrieval can complement RAG.
+
+12. Coding Problems & Practical Implementation
+12.1 Maximum Subarray Sum
+Problem: Given an integer array arr[], find the contiguous subarray containing at least one element that has the maximum possible sum, and return that sum.
+Example 1
+Input
+arr = [2, 3, -8, 7, -1, 2, 3]
+
+
+
+Output
+11
+
+
+Maximum-sum subarray
+[7, -1, 2, 3]
+
+
+
+Example 2
+arr = [-2, -4]
+
+
+
+Output: -2
+
+Important: the subarray must contain at least one element.
+
+Example 3
+arr = [5, 4, 1, 7, 8]
+
+
+
+Output: 25
+
+Topics to prepare:
+- Brute-force approach
+- Optimized approach using Kadane's algorithm
+- Time and space complexity
+- Dry run for positive, negative, and mixed arrays
+- Edge cases, including all-negative arrays
+
+13. Project-Based & Production-Level Interview Questions
+13.1 Project architecture
+1. Explain your GenAI/ML project architecture.
+2. What challenges did you face while moving from POC to production?
+3. How did you handle security and data privacy?
+4. How do you monitor an AI application in production?
+5. How do you handle latency, cost, token usage, and failures?
+6. How would you prevent sensitive information from being exposed?
+These questions can involve several categories at once: RAG, cloud, databases, security, inference, observability, and system design.
+Final preparation map
+Here is the recommended order for studying your question bank.
+Study progress
+0 of 6 phases
+
+
+
+[ ] Phase 1 — Foundations
+
+GenAI/LLM fundamentals, tokenization, embeddings, vector mathematics
+
+[ ] Phase 2 — Core RAG
+
+Ingestion, chunking, dense/sparse retrieval, BM25, RRF, reranking, vector databases
+
+[ ] Phase 3 — Production GenAI
+
+Security, privacy, agents, MCP, A2A, memory, observability
+
+[ ] Phase 4 — Engineering
+
+Python, FastAPI, async programming, SQL, data lakes, AWS/Azure
+
+[ ] Phase 5 — Senior-level design
+
+Inference services, model routing, failover, multi-tenancy, scaling
+
+[ ] Phase 6 — Additional technical rounds
+
+ML algorithms, time series, graph concepts, coding, project explanations
+
+
+One important point from your original notes is worth keeping as a guiding principle throughout your preparation:
+The difference between a GenAI POC and a production system is rarely just the model. It's the architecture around the model.
+
+That principle connects your RAG, database, security, inference, cloud, observability, and system design questions.

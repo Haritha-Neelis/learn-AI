@@ -1,0 +1,20 @@
+9. LLMOps & Performance
+Cost, latency, observability, inference
+.......................................
+
+
+9.1 FastAPI
+1. What are the benefits of FastAPI?
+2. How do you create a database connection string?
+3. How do you handle database connections for multiple users?
+4. What is SQLAlchemy's connection pool?
+9.2 Asynchronous programming
+5. When would you use asynchronous programming, and when would you not use it?
+
+Prepare to explain:
+- Synchronous vs. asynchronous execution
+- I/O-bound vs. CPU-bound workloads
+- async and await
+- Concurrent requests to an LLM provider
+- Async database and API calls
+- Connection pool limits and timeouts

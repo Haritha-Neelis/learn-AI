@@ -1,0 +1,29 @@
+10. System Design & Scalability
+Multi-tenancy, routing, resilience
+..................................
+
+This is a major category for senior-level GenAI interviews. Your ten original system design questions are preserved below.
+10.1 High-concurrency architecture
+1. How would you design a GenAI application serving 10,000+ concurrent users?
+2. How would you identify and eliminate bottlenecks when scaling a GenAI application from hundreds to millions of requests?
+3. How would you design a GenAI system to support real-time and batch workloads simultaneously?
+10.2 Multi-model architecture and routing
+4. How would you design a GenAI platform supporting multiple LLM providers and models?
+5. How would you design model routing based on latency, quality, and cost?
+6. How would you design a fallback architecture when the primary LLM provider becomes unavailable?
+10.3 Enterprise platform design
+7. How would you design data ingestion and processing for an enterprise GenAI platform?
+8. How would you design a system that supports multiple tenants with strict data isolation?
+9. How would you design versioning and rollback for prompts, models, agents, and workflows?
+10. How would you design a GenAI system to support both structured and unstructured enterprise data?
+10.4 Architecture trade-offs
+When answering these questions, be ready to discuss:
+- Load balancing and horizontal scaling
+- API gateways, queues, and rate limiting
+- Caching and request deduplication
+- Model routing and provider fallback
+- Streaming responses and batch processing
+- Tenant isolation and access control
+- Retries, timeouts, circuit breakers, and graceful degradation
+- Cost, latency, throughput, and reliability
+- Deployment strategies, monitoring, and rollback

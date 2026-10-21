@@ -1,0 +1,16 @@
+13. Project-Based & Production-Level Interview Questions
+........................................................
+
+
+13.1 Project architecture
+1. Explain your GenAI/ML project architecture.
+2. What challenges did you face while moving from POC to production?
+3. How did you handle security and data privacy?
+4. How do you monitor an AI application in production?
+5. How do you handle latency, cost, token usage, and failures?
+6. How would you prevent sensitive information from being exposed?
+These questions can involve several categories at once: RAG, cloud, databases, security, inference, observability, and system design.
+Final preparation map
+Here is the recommended order for studying your question bank.
+Study progress
+0 of 6 phases

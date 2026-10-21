@@ -1,0 +1,17 @@
+GenAI & LLM Fundamentals
+LLMs, LLaMA, temperature, tokens
+................................
+
+1.1 LLM architecture and behavior
+1. Explain the LLaMA architecture — its key components and how the model works.
+2. What is temperature tuning, and how does it affect LLM responses?
+3. GPT-4o-mini: What are its input and output token limits?
+4. What is the difference between tokenization and embeddings?
+   - Tokenization converts text into tokens an LLM can process.
+   - Embeddings convert text or data into numerical vectors that represent semantic information.
+5. An LLM can generate different answers for the same prompt at different times. How would you make the output deterministic and consistent?
+
+
+1.2. LLM inference and optimization
+6. What is quantization? Explain its concepts, use cases, and trade-offs.
+7. What are the different LLM inference and optimization strategies?

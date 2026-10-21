@@ -1,0 +1,26 @@
+3. Embeddings & Vector DBs
+Vectors, similarity, vector stores
+...................................
+
+3.1 Embeddings and vector fundamentals
+1. What is an embedding, and why do we need it?
+2. How does text get converted into a vector?
+3. How do you choose an embedding model?
+4. What do the direction and magnitude of a vector represent?
+5. How does similarity search work?
+3.2 Vector database selection
+6. How do you decide which vector database to use?
+7. What is the difference between FAISS, Pinecone, Qdrant, Chroma, Weaviate, and pgvector?
+8. Which database or vector store would you use during local development, and what would you use in production? Why?
+Be prepared to explain these trade-offs:
+- Scalability
+- Availability
+- Performance
+- Cost
+- Security
+- Backup and recovery
+- Maintenance
+3.3 Search and database interaction
+9. How would you combine vector similarity search with metadata filtering?
+10. How do you select the appropriate vector store for an enterprise RAG application?
+Note: Questions 9–10 are additional study prompts derived from your supplied topics, not separate questions from your original list. The original vector database and retrieval questions are already included above.

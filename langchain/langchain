@@ -1,0 +1,102 @@
+1. LangChain Interview Questions
+
+A. LangChain fundamentals
+1. What is LangChain, and why do we use it in GenAI applications?
+2. What problems does LangChain solve compared with calling an LLM API directly?
+3. What are the main components of LangChain?
+4. Explain the difference between LangChain, LangGraph, and LangSmith.
+5. What is a chat model in LangChain?
+6. What is the difference between an LLM and a chat model?
+7. How do you integrate OpenAI or other LLM providers with LangChain?
+8. What are prompts and prompt templates?
+9. What is the difference between PromptTemplate and ChatPromptTemplate?
+10. What are messages such as SystemMessage, HumanMessage, and AIMessage?
+11. What is an output parser, and why is it needed?
+12. What is structured output in LangChain?
+13. What is the difference between structured output and ordinary text output?
+
+B. Chains and LCEL
+14. What is a chain in LangChain?
+15. What is LangChain Expression Language (LCEL)?
+16. What is the pipe operator (|) used for in LCEL?
+17. What are RunnableSequence and RunnableParallel?
+18. What is the difference between sequential and parallel execution?
+19. What are RunnableLambda and RunnablePassthrough?
+20. How do you pass the output of one component as the input to another?
+21. How do you handle exceptions inside a LangChain pipeline?
+22. How do you execute a chain synchronously, asynchronously, and in batch mode?
+23. What is the difference between invoke(), ainvoke(), batch(), and stream()?
+24. How would you debug a chain that returns an incorrect response?
+
+C. Documents and document loaders
+25. What is a Document object in LangChain?
+26. What are document loaders?
+27. How do you load PDFs, CSVs, text files, and web pages?
+28. What is the difference between document content and document metadata?
+29. How do you handle large documents during ingestion?
+30. How do you extract text from scanned PDFs?
+31. How would you handle tables, images, and mixed-format documents?
+32. How do you implement incremental document ingestion when source files change?
+
+D. Text splitters and chunking
+33. Why is chunking required in a RAG application?
+34. What are the different text-splitting strategies in LangChain?
+35. What is RecursiveCharacterTextSplitter?
+36. How does chunk size affect retrieval quality?
+37. What is chunk overlap, and why do we need it?
+38. How do you select the appropriate chunk size and overlap?
+39. What is the difference between character-based, token-based, and semantic chunking?
+40. How would you implement parent-child or hierarchical chunk retrieval?
+41. How would you chunk legal documents while preserving sections, clauses, and references?
+
+E. Embeddings and vector stores
+42. How does LangChain integrate with embedding models?
+43. What is the difference between an embedding model and a vector database?
+44. How do you generate document embeddings and query embeddings?
+45. How does LangChain integrate with Chroma, FAISS, Pinecone, and other vector stores?
+46. What is a retriever in LangChain?
+47. What is the difference between a vector store and a retriever?
+48. What do similarity_search() and similarity_search_with_score() do?
+49. How do metadata filters work during retrieval?
+50. How do you update and delete documents in a vector store?
+51. How would you choose between local vector storage and a managed production vector database?
+
+F. RAG with LangChain
+52. How do you build an end-to-end RAG pipeline using LangChain?
+53. What is the difference between a basic RAG pipeline and an advanced RAG pipeline?
+54. What are the responsibilities of the retriever, prompt, LLM, and output parser?
+55. How do you implement a retrieval chain?
+56. What is the difference between create_retrieval_chain() and create_stuff_documents_chain()?
+57. What is the stuff documents strategy?
+58. What are map-reduce and refine strategies for combining document information?
+59. How do you implement hybrid search using LangChain?
+60. How do you combine BM25 retrieval with vector similarity search?
+61. How do you implement reranking?
+62. How do you reduce hallucinations in a LangChain RAG application?
+63. How do you return source documents and citations with an answer?
+64. How do you troubleshoot irrelevant retrieved chunks?
+65. How do you evaluate retrieval quality separately from answer quality?
+
+G. Tools and agents in LangChain
+66. What is a tool in LangChain?
+67. How do you create a custom tool using Python?
+68. What is tool calling?
+69. What is the difference between a tool and an agent?
+70. How does an LLM decide which tool to call?
+71. How do you define tool arguments using a schema?
+72. What is the role of Pydantic in tool validation?
+73. How do you connect an agent to a database or external API?
+74. What is the difference between a pre-defined chain and an agent-driven workflow?
+75. How do you limit tool calls and prevent infinite agent loops?
+76. How do you handle tool errors, retries, and invalid tool inputs?
+77. How do you implement human approval before a sensitive tool executes?
+
+H. Memory and conversation history
+78. How do you maintain conversation history in a LangChain application?
+79. What is the difference between short-term and long-term memory?
+80. How do you manage conversation history when it exceeds the context window?
+81. How do you summarize older messages without losing important facts?
+82. How would you persist conversation state across application restarts?
+83. How do you prevent one user's conversation history from leaking into another user's session?
+84. How does memory management differ between traditional LangChain applications and LangGraph?
+Version note: Older tutorials often use ConversationBufferMemory and ConversationChain. For modern applications, understand runnable-based patterns and LangGraph's state and persistence features too; APIs and recommended approaches vary by version.

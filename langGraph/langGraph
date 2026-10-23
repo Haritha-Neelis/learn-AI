@@ -1,0 +1,156 @@
+
+2. LangGraph Interview Questions
+
+A. LangGraph fundamentals
+1. What is LangGraph, and why was it introduced?
+2. What problems does LangGraph solve that are difficult to manage with simple chains?
+3. What are the main components of LangGraph?
+4. What is a graph-based workflow?
+5. Explain nodes, edges, and state.
+6. What is the difference between a directed graph and a workflow sequence?
+7. What is the difference between LangChain and LangGraph?
+8. When would you choose LangGraph instead of a simple LangChain chain?
+9. What is a StateGraph?
+10. What are the basic steps to create and compile a LangGraph workflow?
+
+B. State management
+11. What is state in LangGraph?
+12. How do you define a state schema using TypedDict?
+13. What happens when a node reads or updates state?
+14. What are state reducers?
+15. How does the add_messages reducer work?
+16. What happens when multiple nodes update the same state field?
+17. How do you preserve conversation history across graph steps?
+18. What is the difference between state and persistent storage?
+19. How do you manage state for multiple users or sessions?
+20. How do you prevent unnecessary data from accumulating in graph state?
+
+C. Nodes, edges, and conditional routing
+21. What is a node in LangGraph?
+22. What is an edge?
+23. What is a conditional edge?
+24. What does START represent?
+25. What does END represent?
+26. How do you implement conditional routing?
+27. What is the role of add_node(), add_edge(), and add_conditional_edges()?
+28. How can a graph route between SQL retrieval and vector retrieval?
+29. How do you create a loop in LangGraph?
+30. How do you prevent infinite loops?
+31. How would you design a graph with parallel processing branches?
+32. How do you handle errors when one node fails?
+
+D. Building agents with LangGraph
+33. How do you build an AI agent using LangGraph?
+34. How does an LLM-based agent decide whether to call a tool or return an answer?
+35. What is the tool-calling loop?
+36. How do you integrate tools into a graph?
+37. What is ToolNode?
+38. What is tools_condition?
+39. How do you build an agent that calls multiple tools?
+40. How do you implement an agent that retrieves information, validates it, and generates a final answer?
+41. How do you restrict an agent to a specific set of tools?
+42. How do you handle invalid tool calls or tool failures?
+43. How do you implement a supervisor agent that delegates work to specialist agents?
+44. What is the difference between a supervisor architecture and a handoff architecture?
+
+E. Persistence, checkpoints, and memory
+45. What is checkpointing in LangGraph?
+46. Why is persistence important for long-running workflows?
+47. What is a checkpointer?
+48. What is a thread_id, and how is it used?
+49. How do you resume a graph after an interruption?
+50. How do you preserve state between user requests?
+51. What is the difference between a checkpoint and a long-term memory store?
+52. How do you configure persistent checkpoints with an appropriate database backend?
+53. How do you manage multiple concurrent conversations safely?
+54. How do you recover from failures without repeating completed work unnecessarily?
+
+F. Human-in-the-loop workflows
+55. What does human-in-the-loop mean in LangGraph?
+56. What is interrupt()?
+57. How do you pause a graph for human approval?
+58. How do you resume execution after a human provides input?
+59. How would you require approval before sending an email, updating a database, or making a payment?
+60. What happens to the graph state while execution is interrupted?
+61. How do you implement review, correction, and retry loops?
+
+G. Streaming and execution
+62. How do you stream outputs from a LangGraph workflow?
+63. What is the difference between streaming graph updates and streaming LLM tokens?
+64. How do you stream intermediate node results?
+65. How do you execute independent nodes in parallel?
+66. How do you manage asynchronous operations in LangGraph?
+67. How do you control execution timeouts and recursion limits?
+68. How do you inspect the graph structure and debug individual nodes?
+
+H. Advanced LangGraph design
+69. How would you design a multi-agent workflow using LangGraph?
+70. How do you coordinate multiple agents that have different responsibilities?
+71. How would you implement a planning-and-execution workflow?
+72. How do you build a reflection or self-correction loop?
+73. How do you implement a RAG workflow with retrieval grading and query rewriting?
+74. How would you build a workflow that chooses between SQL, vector search, and external APIs?
+75. How do you make a LangGraph workflow fault-tolerant?
+76. How do you test individual nodes and the complete graph?
+77. How do you evaluate an agent's decisions and tool usage?
+78. What are the trade-offs between a deterministic graph and a fully autonomous agent?
+
+3. LangChain vs. LangGraph — comparison questions
+These are particularly important because interviewers often ask them together.
+Topic	LangChain	LangGraph
+Main purpose	Build LLM-powered components and chains	Orchestrate stateful, multi-step workflows
+Workflow	Often linear or composable runnable pipelines	Graph with nodes, edges, branches, and loops
+State	Inputs and outputs flow through components	Shared graph state can be updated across nodes
+Conditional logic	Runnable branching and application logic	Graph-native conditional routing
+Agents	Agent and tool abstractions	Stateful agent execution and orchestration
+Persistence	Depends on the integration and design	Checkpoint-based workflow persistence
+Human approval	Can be implemented with application logic	Supports interrupt-and-resume workflows
+Best fit	RAG chains, prompts, model integration	Complex agents, long-running workflows, multi-agent systems
+
+Remember: they are complementary, not competing frameworks. LangGraph can use LangChain models, prompts, retrievers, and tools.
+4. Scenario-based interview questions
+1. You need to build a PDF chatbot. Would you use LangChain, LangGraph, or both? Explain your design.
+2. Your RAG application retrieves irrelevant chunks. How would you improve the retrieval pipeline?
+3. Your agent repeatedly calls the same tool. How would you prevent the loop?
+4. A workflow fails halfway through execution. How would you resume it without repeating successful steps?
+5. A user asks a question that requires both SQL and vector search. How would you design the graph?
+6. You need a human to approve a database update. How would you pause and resume the workflow?
+7. You have three specialist agents for research, SQL analysis, and summarization. How would you coordinate them?
+8. How would you implement a fallback if the primary LLM provider fails?
+9. How would you isolate state and conversation history across thousands of users?
+10. How would you measure latency, token cost, retrieval quality, tool-call accuracy, and final answer quality?
+11. How would you deploy and monitor a LangGraph workflow in production?
+12. How would you version prompts and workflows and safely roll back a bad release?
+5. Hands-on coding questions
+Practice these in order.
+
+Beginner — LangChain
+1. Create a prompt template and invoke an LLM.
+2. Parse an LLM response into structured JSON.
+3. Load a PDF and split it into chunks.
+4. Generate embeddings and store documents in ChromaDB.
+5. Build a basic RAG chain that returns an answer with source documents.
+
+
+
+
+Intermediate — LangGraph
+6. Create a graph with two nodes and shared state.
+7. Add conditional routing based on the user's question.
+8. Build a chatbot that maintains conversation history.
+9. Build an agent with two tools and a tool-calling loop.
+10. Add checkpointing and resume a conversation using a thread ID.
+
+
+
+
+Advanced — Production
+11. Build a hybrid RAG graph with SQL and vector retrieval.
+12. Add retrieval grading and query rewriting.
+13. Add human approval before executing a sensitive tool.
+14. Build a supervisor that routes tasks to specialist agents.
+15. Expose a LangGraph workflow through FastAPI with streaming, error handling, and session isolation.
+
+
+
+Recommended preparation order: Learn LangChain fundamentals, LCEL, document loading, chunking, embeddings, and RAG first. Then learn LangGraph state, nodes, conditional edges, tool calling, checkpointing, interrupts, and multi-agent workflows.

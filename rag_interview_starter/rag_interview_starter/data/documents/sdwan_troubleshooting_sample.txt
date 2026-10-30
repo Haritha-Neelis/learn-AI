@@ -1,0 +1,12 @@
+Sample network troubleshooting guide — fictional training data only.
+
+Symptom: SD-WAN tunnel is down.
+Initial checks:
+1. Confirm the device and tunnel identifiers.
+2. Check tunnel status and recent event timestamps.
+3. Verify underlay connectivity and routing reachability.
+4. Inspect VPN, firewall and IPsec parameters where applicable.
+5. Review recent configuration changes and device alerts.
+
+Evidence handling:
+A tunnel-down alert alone does not prove the root cause. Check current authorized telemetry and recent events. If telemetry is unavailable or evidence is insufficient, report what is known, list safe diagnostic steps and request further investigation rather than asserting a definite cause.

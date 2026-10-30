@@ -154,3 +154,38 @@ Advanced — Production
 
 
 Recommended preparation order: Learn LangChain fundamentals, LCEL, document loading, chunking, embeddings, and RAG first. Then learn LangGraph state, nodes, conditional edges, tool calling, checkpointing, interrupts, and multi-agent workflows.
+
+
+Why would you use LangGraph instead of a simple LangChain chain?
+
+
+
+What are state, nodes, edges and conditional edges?
+
+
+
+How does a state graph route between SQL and vector search?
+
+
+
+How do you implement retries and conditional query refinement?
+
+
+
+What are checkpoints and resumable workflows?
+
+
+
+How do you stop an agent from looping indefinitely?
+
+
+
+When should a workflow require human approval?
+
+
+
+How do you handle parallel tool calls and failures?
+
+
+
+How would you implement a fallback when retrieval is insufficient?

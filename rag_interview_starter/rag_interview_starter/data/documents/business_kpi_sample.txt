@@ -1,0 +1,10 @@
+Sample business report — fictional training data only.
+
+Healthcare sector, Q2:
+Sample revenue was 12.4 million currency units. The report describes a 4 percent quarter-over-quarter increase. These figures are fictional and are included only to demonstrate retrieval.
+
+Healthcare sector, Q1:
+Sample revenue was 11.9 million currency units. The report notes that this was the previous quarter's baseline.
+
+Data interpretation:
+Revenue values must be compared using the same reporting period, currency, unit and accounting definition. If a question asks why revenue changed, retrieve an authoritative explanation rather than inferring a cause from the figures alone.

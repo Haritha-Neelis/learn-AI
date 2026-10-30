@@ -1,0 +1,20 @@
+Production, cloud, security and evaluation
+Prepare these as practical scenarios, not just definitions.
+- Your RAG application takes 12 seconds to respond. How do you investigate?
+- Retrieval returns irrelevant chunks despite good-looking documents.
+- The model invents revenue figures that are absent from the source.
+- A user asks for information from a department they cannot access.
+- A malicious document contains instructions telling the LLM to reveal secrets.
+- The model provider returns HTTP 429 or times out.
+- Your embedding model is changed after millions of vectors have been indexed.
+- A document is updated, but the old version continues appearing in answers.
+- The API receives 100 concurrent requests.
+- You must deploy a FastAPI application with CI/CD and production monitoring.
+- The model is expensive. What would you optimize first?
+- How do you test an LLM application when outputs are nondeterministic?
+For each scenario, use this interview structure:
+1. Identify the failure and gather evidence.
+2. Isolate the stage causing it.
+3. Fix the root cause rather than hiding the symptom.
+4. Validate using measurable tests.
+5. Monitor to ensure the fix continues working.

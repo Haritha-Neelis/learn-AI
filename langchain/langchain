@@ -100,3 +100,26 @@ H. Memory and conversation history
 83. How do you prevent one user's conversation history from leaking into another user's session?
 84. How does memory management differ between traditional LangChain applications and LangGraph?
 Version note: Older tutorials often use ConversationBufferMemory and ConversationChain. For modern applications, understand runnable-based patterns and LangGraph's state and persistence features too; APIs and recommended approaches vary by version.
+
+
+What problems does LangChain solve?
+
+
+
+What are prompts, chains, retrievers and output parsers?
+
+
+
+How do you connect an LLM to a retriever?
+
+
+
+How do you call tools and validate structured outputs?
+
+
+
+How do you manage conversation history without overflowing the context window?
+
+
+
+How would you test and mock a chain?

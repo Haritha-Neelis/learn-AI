@@ -35,3 +35,74 @@ Document → Chunking → Embedding → Vector DB → Retrieval → Context → 
 25. If multiple documents are available, how does the system decide which information is relevant?
 26. What role do embeddings, similarity scores, metadata filters, and reranking play in document selection?
 27. How would you improve retrieval if the LLM is getting irrelevant context?
+
+
+Explain the complete RAG pipeline from document ingestion to the final answer.
+
+
+
+Why do we need embeddings?
+
+
+
+How does an embedding model convert text into vectors?
+
+
+
+How do you choose chunk size and overlap?
+
+
+
+What is the difference between document chunking and semantic chunking?
+
+
+
+What are cosine similarity, dot product and Euclidean distance?
+
+
+
+What is the difference between dense and sparse retrieval?
+
+
+
+What is hybrid search, and when would you use it?
+
+
+
+What is reranking? Why use Cohere Rerank after vector search?
+
+
+
+What is metadata filtering?
+
+
+
+What are top-k, similarity thresholds and candidate retrieval?
+
+
+
+What is query rewriting, and when is it useful?
+
+
+
+What are parent-child retrieval and contextual retrieval?
+
+
+
+How do you handle scanned PDFs, tables and duplicate documents?
+
+
+
+How do you update or delete documents without leaving stale vectors?
+
+
+
+How do you provide citations and prevent unsupported answers?
+
+
+
+How do you evaluate retrieval independently from generation?
+
+
+
+How would you build RAG over millions of documents?

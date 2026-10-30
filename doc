@@ -150,3 +150,50 @@ Stores vectors and retrieves relevant chunks
 Cohere Chat API
 
 Generates an answer from retrieved context
+
+
+How do you convert a natural-language question into SQL?
+
+
+
+How do you supply schema information to an LLM?
+
+
+
+How do you distinguish a structured question from a document-search question?
+
+
+
+How would you answer, “What was the revenue for the healthcare sector last quarter?”
+
+
+
+How do you prevent destructive SQL statements?
+
+
+
+How do you validate a generated query before execution?
+
+
+
+What is the difference between SQL aggregation and semantic search?
+
+
+
+How do you handle ambiguous questions such as “Show the best-performing sector”?
+
+
+
+What if the required table or column doesn't exist?
+
+
+
+How do you enforce row-level permissions?
+
+
+
+How do you prevent SQL injection and unauthorized data access?
+
+
+
+How would you combine SQL results and retrieved documents in one answer?

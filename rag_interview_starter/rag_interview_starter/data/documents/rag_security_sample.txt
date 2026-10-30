@@ -1,0 +1,10 @@
+Sample enterprise RAG security notes.
+
+Access control:
+Apply user and document authorization in trusted backend code before returning retrieved content. Do not rely on a prompt instruction as the only access-control mechanism.
+
+Prompt injection:
+Treat retrieved document text as untrusted content. A document may contain instructions that conflict with application policy. Do not allow retrieved content to override system policy, disclose secrets or trigger unauthorized tool actions.
+
+Citations:
+Keep source identifiers and page or section metadata with every chunk. Validate that citations refer to sources actually retrieved for the answer.

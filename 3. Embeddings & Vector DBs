@@ -24,3 +24,50 @@ Be prepared to explain these trade-offs:
 9. How would you combine vector similarity search with metadata filtering?
 10. How do you select the appropriate vector store for an enterprise RAG application?
 Note: Questions 9–10 are additional study prompts derived from your supplied topics, not separate questions from your original list. The original vector database and retrieval questions are already included above.
+
+
+What does a vector database store?
+
+
+
+What is an approximate nearest-neighbor index?
+
+
+
+How do Milvus and Chroma differ?
+
+
+
+When would you choose Elasticsearch instead of a dedicated vector database?
+
+
+
+How do you choose an embedding model and vector dimension?
+
+
+
+What happens when query and document embeddings come from incompatible models?
+
+
+
+How do you filter by department, date, document type or access permissions?
+
+
+
+What is the difference between an index and a collection?
+
+
+
+How do you troubleshoot poor recall?
+
+
+
+How would you scale retrieval while keeping latency acceptable?
+
+
+
+How do you handle embedding-model upgrades and re-indexing?
+
+
+
+What happens if the vector database is unavailable?
